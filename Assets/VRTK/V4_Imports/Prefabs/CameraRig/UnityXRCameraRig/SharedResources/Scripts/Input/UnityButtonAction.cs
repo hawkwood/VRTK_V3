@@ -13,9 +13,10 @@
         /// <summary>
         /// The <see cref="UnityEngine.KeyCode"/> to listen for state changes on.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public KeyCode KeyCode { get; set; }
+
+        // [Serialized]
+        // [field: DocumentedByXml]
+        public KeyCode KeyCode; // { get; set; }
 
         protected virtual void Update()
         {

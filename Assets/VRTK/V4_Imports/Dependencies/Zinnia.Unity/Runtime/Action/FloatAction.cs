@@ -23,9 +23,10 @@
         /// <summary>
         /// The tolerance of equality between two <see cref="float"/> values.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public float EqualityTolerance { get; set; } = float.Epsilon;
+        
+        // [Serialized]
+        // [field: DocumentedByXml]
+        public float EqualityTolerance = float.Epsilon; // { get; set; }
 
         /// <inheritdoc />
         protected override bool IsValueEqual(float value)

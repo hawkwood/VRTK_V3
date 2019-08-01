@@ -13,9 +13,10 @@
         /// <summary>
         /// The named axis to listen for state changes on.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public string AxisName { get; set; }
+
+        // [Serialized]
+        // [field: DocumentedByXml]
+        public string AxisName; // { get; set; }
 
         protected virtual void Update()
         {

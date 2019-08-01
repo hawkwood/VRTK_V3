@@ -268,6 +268,8 @@
         /// <param name="value">The new value.</param>
         protected virtual void ProcessValue(TValue value)
         {
+            Debug.Log("Action " + gameObject.name + " ProcessValue " + value);
+
             Value = value;
 
             bool shouldActivate = ShouldActivate(value);
