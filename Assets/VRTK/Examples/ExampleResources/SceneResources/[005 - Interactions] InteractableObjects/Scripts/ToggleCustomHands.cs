@@ -78,13 +78,13 @@
                         ToggleControllerRenderer(leftController.actual, "Model");
                         ToggleControllerRenderer(rightController.actual, "Model");
                         break;
-                    case "Oculus":
-                        ToggleControllerRenderer(leftController.model);
-                        ToggleControllerRenderer(rightController.model);
-                        break;
                     case "WindowsMR":
                         ToggleControllerRenderer(leftController.model, "glTFController");
                         ToggleControllerRenderer(rightController.model, "glTFController");
+                        break;
+                    default:
+                        ToggleControllerRenderer(leftController.model);
+                        ToggleControllerRenderer(rightController.model);
                         break;
                 }
             }
